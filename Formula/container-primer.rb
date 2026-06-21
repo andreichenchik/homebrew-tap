@@ -1,9 +1,9 @@
 class ContainerPrimer < Formula
   desc "Build or pull a container image and run it in a lightweight Linux VM"
   homepage "https://github.com/andreichenchik/container-primer"
-  version "0.0.0"
+  version "0.0.1"
   url "https://github.com/andreichenchik/container-primer/releases/download/v#{version}/container-primer-#{version}-arm64-macos.tar.gz"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "784ce3bfdb1aa4d96f2fc0c91263cb45e507bcdae0a6ec1150a5c617b8f67d6e"
   license :cannot_represent
 
   depends_on arch: :arm64
