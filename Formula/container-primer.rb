@@ -7,7 +7,7 @@ class ContainerPrimer < Formula
   license :cannot_represent
 
   depends_on arch: :arm64
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   def install
     # Keep the binary and its *.bundle resources (loaded via Bundle.module) adjacent.
