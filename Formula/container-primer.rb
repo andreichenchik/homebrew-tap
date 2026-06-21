@@ -10,9 +10,7 @@ class ContainerPrimer < Formula
   depends_on macos: :tahoe
 
   def install
-    # Keep the binary and its *.bundle resources (loaded via Bundle.module) adjacent.
-    libexec.install Dir["*"]
-    bin.install_symlink libexec/"container-primer"
+    bin.install "container-primer"
   end
 
   def caveats
