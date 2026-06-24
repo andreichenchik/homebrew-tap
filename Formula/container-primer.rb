@@ -6,6 +6,7 @@ class ContainerPrimer < Formula
   sha256 "aa31e87add3da91e34b1edd8d67d3da4757069ed2fd080aafe8a0dc3b7aceec1"
   license :cannot_represent
 
+  depends_on "container"
   depends_on arch: :arm64
   depends_on macos: :tahoe
 
@@ -16,7 +17,8 @@ class ContainerPrimer < Formula
   def caveats
     <<~EOS
       container-primer requires an Apple silicon Mac running macOS 26+.
-      Podman (preferred) or Docker is only needed for `--build-image`; `--image` runs standalone.
+      `--build-image` needs the container service running: `container system start`
+      (or `brew services start container`). `--image` runs standalone.
     EOS
   end
 
