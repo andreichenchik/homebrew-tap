@@ -1,9 +1,9 @@
 class AgentWrap < Formula
   desc "Run a containerized agent in a lightweight, sandboxed Linux VM"
   homepage "https://github.com/andreichenchik/agent-wrap"
-  version "0.0.5"
+  version "0.1.0"
   url "https://github.com/andreichenchik/agent-wrap/releases/download/v#{version}/agent-wrap-#{version}-arm64-macos.tar.gz"
-  sha256 "8ee6288295188deb44572fd61d1978551f91251e2cd046d8f4d04dccef91600b"
+  sha256 "79d6c051ae457ecf888ac388d505a7c5b53228f0dec87824ab506be230f140ce"
   license :cannot_represent
 
   depends_on "container"
